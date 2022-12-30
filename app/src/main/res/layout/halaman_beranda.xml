@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height= "0dp"
+        android:layout_weight="1"
+        android:id="@+id/frame_layout"
+        />
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment_container"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
+         />
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@drawable/halaman_beranda"-->
+<!--        android:id="@+id/selected_page">-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView6"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_above="@+id/textView16"-->
+<!--            android:layout_marginTop="48dp"-->
+<!--            android:layout_toStartOf="@+id/textView15"-->
+<!--            android:fontFamily="@font/mulish"-->
+<!--            android:text="Hi"-->
+<!--            android:textAlignment="viewStart"-->
+<!--            android:textColor="#101010"-->
+<!--            android:textSize="16sp"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/textView15"-->
+<!--            app:layout_constraintHorizontal_bias="0.72"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView16"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/textView15"-->
+<!--            android:layout_marginEnd="45dp"-->
+<!--            android:layout_toStartOf="@+id/imageView14"-->
+<!--            android:fontFamily="@font/mulish_bold"-->
+<!--            android:text="Selamat Datang di APOTI"-->
+<!--            android:textAlignment="viewStart"-->
+<!--            android:textColor="#0C0C0C"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.184"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView15" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/bukupanduan1"-->
+<!--            android:layout_width="133dp"-->
+<!--            android:layout_height="141dp"-->
+<!--            android:layout_below="@+id/imageView14"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.057"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView14"-->
+<!--            app:layout_constraintVertical_bias="0.0"-->
+<!--            app:srcCompat="@drawable/buku_panduan" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/bukupanduan2"-->
+<!--            android:layout_width="130dp"-->
+<!--            android:layout_height="140dp"-->
+<!--            android:layout_below="@+id/imageView14"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginEnd="-6dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.491"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView14"-->
+<!--            app:layout_constraintVertical_bias="0.002"-->
+<!--            app:srcCompat="@drawable/buku_panduan2" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/bukupanduan3"-->
+<!--            android:layout_width="142dp"-->
+<!--            android:layout_height="141dp"-->
+<!--            android:layout_above="@+id/button2"-->
+<!--            android:layout_below="@+id/imageView14"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.977"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView14"-->
+<!--            app:layout_constraintVertical_bias="0.002"-->
+<!--            app:srcCompat="@drawable/buku_panduan3" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button2"-->
+<!--            android:layout_width="295dp"-->
+<!--            android:layout_height="55dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginTop="228dp"-->
+<!--            android:backgroundTint="#249E97"-->
+<!--            android:fontFamily="@font/mulish_bold"-->
+<!--            android:text="E-Book Panduan"-->
+<!--            android:onClick="ebook"-->
+<!--            android:textSize="18sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.405"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView13"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/button2"-->
+<!--            app:srcCompat="@drawable/tampilan_slide" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView14"-->
+<!--            android:layout_width="142dp"-->
+<!--            android:layout_height="83dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginEnd="-2dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="1.0"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:srcCompat="@drawable/oniel" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView19"-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="97dp"-->
+<!--            android:layout_below="@+id/imageView13"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_toStartOf="@+id/imageView20"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/imageView20"-->
+<!--            app:layout_constraintHorizontal_bias="0.358"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageView18"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView13"-->
+<!--            app:srcCompat="@drawable/remaja_putri" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView16"-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="97dp"-->
+<!--            android:layout_below="@+id/imageView13"-->
+<!--            android:layout_marginTop="12dp"-->
+<!--            android:layout_marginEnd="19dp"-->
+<!--            android:layout_toStartOf="@+id/imageView18"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.051"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView13"-->
+<!--            app:srcCompat="@drawable/_anak" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView18"-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="97dp"-->
+<!--            android:layout_below="@+id/imageView13"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginEnd="21dp"-->
+<!--            android:layout_toStartOf="@+id/imageView19"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.056"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageView16"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView13"-->
+<!--            app:srcCompat="@drawable/_ibu_hamil" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView20"-->
+<!--            android:layout_width="98dp"-->
+<!--            android:layout_height="123dp"-->
+<!--            android:layout_below="@+id/imageView13"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.944"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageView18"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView13"-->
+<!--            app:srcCompat="@drawable/lansia" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textView15"-->
+<!--            android:layout_width="69dp"-->
+<!--            android:layout_height="22dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginTop="48dp"-->
+<!--            android:layout_marginEnd="142dp"-->
+<!--            android:layout_toStartOf="@+id/imageView14"-->
+<!--            android:fontFamily="@font/mulish"-->
+<!--            android:text="Oniel!"-->
+<!--            android:textAlignment="viewStart"-->
+<!--            android:textColor="#0B0A0A"-->
+<!--            android:textSize="16sp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.295"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:mbn_backgroundBottomColor="@color/hijau"
+        app:mbn_circleColor="@color/circleColor"
+        app:mbn_countBackgroundColor="@color/countBackgroundColor"
+        app:mbn_countTextColor="@color/countTextColor"
+        app:mbn_defaultIconColor="@color/defaultIconColor"
+        app:mbn_selectedIconColor="@color/hijau"
+        app:mbn_shadowColor="@color/shadowColor" />
+</LinearLayout>

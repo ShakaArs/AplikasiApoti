@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/halaman_beranda">
+
+                <ImageView
+                    android:id="@+id/bukupanduan2"
+                    android:layout_width="130dp"
+                    android:layout_height="140dp"
+                    android:layout_below="@+id/imageView14"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="-6dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.491"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView14"
+                    app:layout_constraintVertical_bias="0.001"
+                    app:srcCompat="@drawable/buku_panduan2" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_above="@+id/textView16"
+                    android:layout_marginTop="44dp"
+                    android:layout_toStartOf="@+id/textView15"
+                    android:fontFamily="@font/mulish"
+                    android:text="Hi"
+                    android:textAlignment="viewStart"
+                    android:textColor="#101010"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@+id/textView15"
+                    app:layout_constraintHorizontal_bias="0.72"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView15"
+                    android:layout_marginEnd="45dp"
+                    android:layout_toStartOf="@+id/imageView14"
+                    android:fontFamily="@font/mulish_bold"
+                    android:text="Selamat Datang di APOTI"
+                    android:textAlignment="viewStart"
+                    android:textColor="#0C0C0C"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.184"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <ImageView
+                    android:id="@+id/bukupanduan1"
+                    android:layout_width="133dp"
+                    android:layout_height="141dp"
+                    android:layout_below="@+id/imageView14"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.057"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView14"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/buku_panduan" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="295dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="224dp"
+                    android:backgroundTint="#249E97"
+                    android:fontFamily="@font/mulish_bold"
+                    android:onClick="ebook"
+                    android:text="E-Book Panduan"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.405"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/imageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:layout_constraintTop_toBottomOf="@+id/button2"
+                    tools:layout_editor_absoluteX="38dp"
+                    app:iss_period="1000"
+                    app:iss_auto_cycle="true"
+                    app:iss_delay="1000"
+                    app:iss_corner_radius="10"
+                    app:iss_title_background="@drawable/gradient"
+
+                    ></com.denzcoskun.imageslider.ImageSlider>
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="142dp"
+                    android:layout_height="83dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="-2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/oniel" />
+
+                <ImageView
+                    android:id="@+id/btn_ibuhamil"
+                    android:layout_width="83dp"
+                    android:layout_height="91dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintEnd_toStartOf="@+id/Btn_anak"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageSlider"
+                    app:srcCompat="@drawable/_ibu_hamil" />
+
+                <ImageView
+                    android:id="@+id/btn_lansia"
+                    android:layout_width="98dp"
+                    android:layout_height="123dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageSlider"
+                    app:srcCompat="@drawable/lansia" />
+
+                <ImageView
+                    android:id="@+id/btn_remajaputri"
+                    android:layout_width="80dp"
+                    android:layout_height="97dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_ibuhamil"
+                    app:layout_constraintHorizontal_bias="0.791"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageSlider"
+                    app:srcCompat="@drawable/remaja_putri" />
+
+                <ImageView
+                    android:id="@+id/Btn_anak"
+                    android:layout_width="80dp"
+                    android:layout_height="97dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_lansia"
+                    app:layout_constraintHorizontal_bias="0.99"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageSlider"
+                    app:srcCompat="@drawable/_anak" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="69dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginEnd="142dp"
+                    android:layout_toStartOf="@+id/imageView14"
+                    android:fontFamily="@font/mulish"
+                    android:text="Oniel!"
+                    android:textAlignment="viewStart"
+                    android:textColor="#0B0A0A"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.295"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/bukupanduan3"
+                    android:layout_width="142dp"
+                    android:layout_height="141dp"
+                    android:layout_above="@+id/button2"
+                    android:layout_below="@+id/imageView14"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.977"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView14"
+                    app:layout_constraintVertical_bias="0.001"
+                    app:srcCompat="@drawable/buku_panduan3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+
+
+

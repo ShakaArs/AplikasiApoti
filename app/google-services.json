@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1072142073109",
+    "firebase_url": "https://login-dan-register-apoti-default-rtdb.firebaseio.com",
+    "project_id": "login-dan-register-apoti",
+    "storage_bucket": "login-dan-register-apoti.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072142073109:android:2e3340db402619e582fd1c",
+        "android_client_info": {
+          "package_name": "com.example.aplikasiapoti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072142073109-mqrsv2f9jo50k0qiofla99kdqdvudh57.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa9E6kYFNk_810-6YpLf-4PiePQZJCELo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1072142073109-mqrsv2f9jo50k0qiofla99kdqdvudh57.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

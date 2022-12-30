@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">AplikasiApoti</string>
+    <string name="apoti">APOTI !</string>
+    <string name="hai_selamat_datang_di">Hai selamat datang di</string>
+    <string name="silakan_isi_formulir_ini_untuk_membuat_akun">silakan isi formulir ini untuk membuat akun!</string>
+    <string name="registrasi">Registrasi</string>
+    <string name="apoti1">APOTI !</string>
+    <string name="password">Password</string>
+    <string name="konfirmasi_password">Konfirmasi Password</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="todo3">TODO</string>
+    <string name="todo4">TODO</string>
+    <string name="bintang1">*</string>
+    <string name="username1">Username</string>
+    <string name="todo5">TODO</string>
+    <string name="email">Email</string>
+    <string name="bintang2">*</string>
+    <string name="bintang3">*</string>
+
+    <string name="Home">Home</string>
+    <string name="Kesehatan">Kesehatan</string>
+    <string name="Jadwal">Jadwal</string>
+    <string name="Perkembangan">Perkembangan</string>
+    <string name="Akun">Akun</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
