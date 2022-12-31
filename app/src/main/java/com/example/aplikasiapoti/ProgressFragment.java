@@ -106,10 +106,10 @@ public class ProgressFragment extends Fragment {
 
 //            Mengambil data dari sesuai kolom array
 
-            KategoriList.add(cursor.getString(0));
-            NamaPasienList.add(cursor.getString(1));
-            FotoList.add(cursor.getString(4));
-            NIKList.add(cursor.getString(6));
+            KategoriList.add(cursor.getString(1));
+            NamaPasienList.add(cursor.getString(5));
+            FotoList.add(cursor.getString(0));
+            NIKList.add(cursor.getString(0));
         }
     }
 

@@ -25,6 +25,7 @@ import butterknife.ButterKnife;
 public class DetailPerkembangan extends AppCompatActivity{
     private DbHealth MyDatabase;
     private TextView ShowKategoriPos, ShowNamaPasien, ShowTinggiBadan, ShowBeratBadan, SHowNIK, ShowTensiDarah;
+    private String Id;
     private ImageView Back;
     private Button Update;
     private String KodeSend = "KODE";
@@ -79,7 +80,7 @@ public class DetailPerkembangan extends AppCompatActivity{
     private void getData(){
 
         SQLiteDatabase ReadData = MyDatabase.getReadableDatabase();
-        Cursor cursor = ReadData.rawQuery("SELECT * FROM " + DbHealth.MyColumns.NamaTabel + " WHERE " + DbHealth.MyColumns.KategoriPos + "=" + SHowNIK, null);
+            Cursor cursor = ReadData.rawQuery("SELECT * FROM " + DbHealth.MyColumns.NamaTabel  , null);
 
         cursor.moveToFirst();//Memulai Cursor pada Posisi Awal
         if(cursor.moveToFirst()){

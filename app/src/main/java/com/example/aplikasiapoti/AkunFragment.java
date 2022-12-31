@@ -1,14 +1,28 @@
 package com.example.aplikasiapoti;
 
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -17,6 +31,12 @@ import android.widget.Button;
  */
 public class AkunFragment extends Fragment {
     Button btn_keluar;
+    String mykey;
+    DatabaseReference databaseReference;
+    TextView namalengkap,username,email;
+    String usernamee;
+    ProgressDialog progressDialog;
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -62,6 +82,43 @@ public class AkunFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_akun, container, false);
+//        progressDialog = new ProgressDialog(getContext());
+//        progressDialog.setTitle("Tunggu Sebentar...");
+//        progressDialog.setCanceledOnTouchOutside(false);
+//
+        SharedPreferences sharedPreferences = getActivity().getSharedPreferences("Storedata", Context.MODE_PRIVATE);
+
+        if(sharedPreferences.contains("Users")){
+            mykey =sharedPreferences.getString("Users","Data tidak ditemukan");
+        }
+        final TextView namaLengkapText = (TextView)view.findViewById(R.id.namalengkapakun);
+        final TextView usernameText = (TextView)view.findViewById(R.id.usernameakun);
+        final TextView emailtxt = (TextView)view.findViewById(R.id.emailakun);
+        final TextView passwordtxt = (TextView)view.findViewById(R.id.passwordakun);
+        databaseReference = FirebaseDatabase.getInstance().getReference("Users");
+        databaseReference.child("username").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DataSnapshot> task) {
+
+                DataSnapshot dataSnapshot = task.getResult();
+
+
+                String namalengkap = String.valueOf(dataSnapshot.child("namalengkap").getValue());
+                String username = String.valueOf(dataSnapshot.child("username").getValue());
+                String email = String.valueOf(dataSnapshot.child("email").getValue());
+                String password = String.valueOf(dataSnapshot.child("password").getValue());
+                DataAkun dataAkun =dataSnapshot.getValue(DataAkun.class);
+
+//                String namalengkapa = dataAkun.getNamaLengkap();
+//                String usernamea = dataAkun.getUsername();
+//                String emaila = dataAkun.getEmail();
+//                String passworda = dataAkun.getPassword();
+                namaLengkapText.setText(namalengkap);
+                usernameText.setText(username);
+                emailtxt.setText(email);
+                passwordtxt.setText(password);
+            }
+        });
         btn_keluar = view.findViewById(R.id.btn_logout);
         btn_keluar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,5 +129,8 @@ public class AkunFragment extends Fragment {
             }
         });
         return view;
+    }
+
+    private class ActivityReadDataBinding {
     }
 }

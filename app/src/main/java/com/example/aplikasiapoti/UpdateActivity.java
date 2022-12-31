@@ -46,7 +46,6 @@ public class UpdateActivity extends AppCompatActivity {
         NewBeratBadan = findViewById(R.id.edt_beratbadan);
         NewNIK = findViewById(R.id.edt_lingkarlengan);
         NewTensiDarah = findViewById(R.id.edt_tensidarah);
-        NewImage = findViewById(R.id.edt_newfoto);
 
         Back = findViewById(R.id.back);
 
@@ -82,18 +81,18 @@ public class UpdateActivity extends AppCompatActivity {
 
                 }
             });
-            Back.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                finish();
-                }
-            });
-            Open.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    CropImage.startPickImageActivity(UpdateActivity.this);
-                }
-            });
+//            Back.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                finish();
+//                }
+//            });
+//            Open.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    CropImage.startPickImageActivity(UpdateActivity.this);
+//                }
+//            });
         }
     }
 
@@ -119,7 +118,7 @@ public class UpdateActivity extends AppCompatActivity {
             values.put(DbHealth.MyColumns.Foto, String.valueOf(resultUri));
 
             //Untuk Menentukan Data/Item yang ingin diubah, berdasarkan NIM
-            String selection = DbHealth.MyColumns.KategoriPos + " LIKE ?";
+            String selection = DbHealth.MyColumns.NIK + " LIKE ?";
             String[] selectionArgs = {getNewKode};
             ReadData.update(DbHealth.MyColumns.NamaTabel, values, selection, selectionArgs);
             Toast.makeText(getApplicationContext(), "Berhasil Diubah", Toast.LENGTH_SHORT).show();

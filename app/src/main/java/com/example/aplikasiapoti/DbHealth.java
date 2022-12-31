@@ -21,7 +21,7 @@ public class DbHealth extends SQLiteOpenHelper {
 
     }
 
-    private static final String NamaDatabse = "dbapotihealth.db";
+    private static final String NamaDatabse = "dbapotihealth3.db";
     private static final int VersiDatabase = 1;
 
     private static final String SQL_CREATE_ENTRIES = "CREATE TABLE " + MyColumns.NamaTabel +

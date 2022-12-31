@@ -26,7 +26,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/namalengkap"
+            android:id="@+id/namalengkapakun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="208dp"
@@ -111,59 +111,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/textView28"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="452dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="Update foto profil"
-            android:textColor="#090909"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.328"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="119dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="#249E97"
-            android:text="UPLOAD"
-            android:textSize="10sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/textView28"
-            app:layout_constraintTop_toBottomOf="@+id/password" />
-
         <Button
             android:id="@+id/btn_logout"
             android:layout_width="119dp"
             android:layout_height="48dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="476dp"
             android:backgroundTint="#FF0404"
             android:text="LOGOUT"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.558"
+            app:layout_constraintHorizontal_bias="0.523"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button3" />
-
-        <ImageView
-            android:id="@+id/imageView26"
-            android:layout_width="27dp"
-            android:layout_height="19dp"
-            android:layout_marginTop="28dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.132"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView25"
-            app:srcCompat="@drawable/foto" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/password"
+            android:id="@+id/passwordakun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="408dp"
@@ -178,7 +140,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/username"
+            android:id="@+id/usernameakun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="316dp"
@@ -193,7 +155,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/email"
+            android:id="@+id/emailakun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="364dp"
